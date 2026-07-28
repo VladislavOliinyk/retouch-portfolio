@@ -1,0 +1,65 @@
+export const en = {
+  nav: {
+    work: "Work",
+    about: "About",
+    services: "Services",
+    contact: "Contact",
+  },
+  hero: {
+    label: "High-end commercial retouching",
+    title: "Precision retouching for beauty, fashion, and premium brands.",
+    copy: "Editorial skin work, controlled color, clean composites, and image finishing for campaigns that have to look expensive up close.",
+    primary: "View work",
+    secondary: "Get in touch",
+  },
+  intro: {
+    eyebrow: "Studio standard",
+    title: "Quiet corrections. Polished surfaces. Images that keep the photographer's intent intact.",
+    copy: "The portfolio is built around restraint: natural skin texture, exacting product edges, tonal consistency, and delivery discipline for teams that cannot afford guesswork.",
+  },
+  portfolio: {
+    eyebrow: "Selected work",
+    title: "Commercial polish across fashion, beauty, product, and color.",
+    all: "All",
+    open: "Open project",
+    close: "Close",
+  },
+  compare: {
+    eyebrow: "Before / After",
+    title: "Retouching should be felt before it is noticed.",
+    copy: "Drag the handle to compare a raw editorial frame with a polished campaign finish. The goal is clarity, texture control, and believable refinement.",
+    before: "Before",
+    after: "After",
+  },
+  services: {
+    eyebrow: "Services",
+    title: "Built for commercial workflows and image sets that need consistency.",
+    items: [
+      "Beauty Retouch",
+      "Fashion",
+      "Commercial",
+      "Product",
+      "Color Grading",
+      "Background Cleanup",
+    ],
+  },
+  about: {
+    eyebrow: "About",
+    title: "A retouching partner for photographers, agencies, and brands with demanding visual standards.",
+    copy: "I work with disciplined files, calibrated color decisions, and a calm approval process. Every image is treated as part of a larger brand system, not as a one-off edit.",
+    stats: ["8+ years", "320+ campaigns", "48h proofing"],
+  },
+  contact: {
+    eyebrow: "Contact",
+    title: "Send a brief, reference images, or a production timeline.",
+    name: "Name",
+    email: "Email",
+    message: "Project details",
+    submit: "Send inquiry",
+  },
+  notFound: {
+    title: "Page not found",
+    copy: "This frame is not in the final selection.",
+    link: "Back to portfolio",
+  },
+};
