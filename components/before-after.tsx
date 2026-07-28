@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import type { Dictionary } from "@/dictionaries";
+import { assetPath } from "@/lib/paths";
 import { SectionReveal } from "./section-reveal";
 
 export function BeforeAfter({ dictionary }: { dictionary: Dictionary }) {
@@ -37,9 +38,9 @@ export function BeforeAfter({ dictionary }: { dictionary: Dictionary }) {
             }}
             data-cursor="hover"
           >
-            <Image src="/images/work-04.jpg" alt="Before retouch" fill className="object-cover grayscale contrast-75 saturate-50" sizes="(min-width: 900px) 58vw, 100vw" />
+            <Image src={assetPath("/images/work-04.jpg")} alt="Before retouch" fill className="object-cover grayscale contrast-75 saturate-50" sizes="(min-width: 900px) 58vw, 100vw" />
             <div className="absolute inset-0 overflow-hidden" style={{ width: `${position}%` }}>
-              <Image src="/images/work-04.jpg" alt="After retouch" fill className="object-cover contrast-110 saturate-125" sizes="(min-width: 900px) 58vw, 100vw" />
+              <Image src={assetPath("/images/work-04.jpg")} alt="After retouch" fill className="object-cover contrast-110 saturate-125" sizes="(min-width: 900px) 58vw, 100vw" />
             </div>
             <div className="absolute inset-y-0 w-px bg-gold" style={{ left: `${position}%` }} />
             <motion.div className="absolute top-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center border border-gold bg-ink/85 text-gold" style={{ left: `${position}%` }} whileTap={{ scale: 0.92 }}>

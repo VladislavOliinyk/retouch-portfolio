@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Dictionary } from "@/dictionaries";
+import { assetPath } from "@/lib/paths";
 import { SectionReveal } from "./section-reveal";
 
 export function About({ dictionary }: { dictionary: Dictionary }) {
@@ -8,7 +9,7 @@ export function About({ dictionary }: { dictionary: Dictionary }) {
       <div className="container grid gap-12 md:grid-cols-[1.05fr_1fr] md:items-center">
         <SectionReveal>
           <div className="relative aspect-[4/5] overflow-hidden bg-surface">
-            <Image src="/images/work-02.jpg" alt="Retouching studio visual" fill className="object-cover" sizes="(min-width: 900px) 48vw, 100vw" />
+            <Image src={assetPath("/images/work-02.jpg")} alt="Retouching studio visual" fill className="object-cover" sizes="(min-width: 900px) 48vw, 100vw" />
           </div>
         </SectionReveal>
 

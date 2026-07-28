@@ -5,6 +5,7 @@ import { ArrowDown, Send } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import type { Dictionary } from "@/dictionaries";
 import type { Locale } from "@/lib/i18n";
+import { assetPath } from "@/lib/paths";
 
 export function Hero({ dictionary, locale }: { dictionary: Dictionary; locale: Locale }) {
   const { scrollY } = useScroll();
@@ -13,7 +14,7 @@ export function Hero({ dictionary, locale }: { dictionary: Dictionary; locale: L
   return (
     <section className="relative min-h-screen overflow-hidden pt-20">
       <motion.div className="absolute inset-0" style={{ y }}>
-        <Image src="/images/hero.jpg" alt="Editorial beauty retouching hero image" fill priority className="object-cover object-[68%_28%]" sizes="100vw" />
+        <Image src={assetPath("/images/hero.jpg")} alt="Editorial beauty retouching hero image" fill priority className="object-cover object-[68%_28%]" sizes="100vw" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,11,11,0.88),rgba(11,11,11,0.28)_48%,rgba(11,11,11,0.7))]" />
         <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-ink to-transparent" />
       </motion.div>

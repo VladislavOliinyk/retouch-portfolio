@@ -6,6 +6,7 @@ import { Maximize2, X } from "lucide-react";
 import { useMemo, useState } from "react";
 import { categories, portfolioItems, type PortfolioItem, type WorkCategory } from "@/data/portfolio";
 import type { Dictionary } from "@/dictionaries";
+import { assetPath } from "@/lib/paths";
 import { SectionReveal } from "./section-reveal";
 
 type Filter = WorkCategory | "All";
@@ -58,7 +59,7 @@ export function Portfolio({ dictionary }: { dictionary: Dictionary }) {
               >
                 <button className="block w-full text-left" onClick={() => setActive(item)} aria-label={`${dictionary.portfolio.open}: ${item.title}`}>
                   <Image
-                    src={item.image}
+                    src={assetPath(item.image)}
                     alt={item.title}
                     width={item.width}
                     height={item.height}
@@ -89,7 +90,7 @@ export function Portfolio({ dictionary }: { dictionary: Dictionary }) {
             </button>
             <div className="grid h-full place-items-center">
               <div className="relative h-[82vh] w-full max-w-5xl">
-                <Image src={active.image} alt={active.title} fill className="object-contain" sizes="100vw" />
+                <Image src={assetPath(active.image)} alt={active.title} fill className="object-contain" sizes="100vw" />
               </div>
               <div className="absolute bottom-6 left-6 right-6 flex justify-between gap-6 text-xs uppercase tracking-[0.24em] text-muted md:left-10 md:right-10">
                 <span>{active.title}</span>

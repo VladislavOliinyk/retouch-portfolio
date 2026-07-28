@@ -15,8 +15,10 @@ const sans = Inter({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://vladislavoliinyk.github.io/retouch-portfolio";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://retouch.studio"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Lily Oliinyk",
     template: "%s | Lily Oliinyk",

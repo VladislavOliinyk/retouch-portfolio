@@ -1,6 +1,6 @@
-import { redirect } from "next/navigation";
 import { defaultLocale } from "@/lib/i18n";
+import { SitePage } from "@/components/site-page";
 
 export default function Home() {
-  redirect(`/${defaultLocale}`);
+  return <SitePage locale={defaultLocale} />;
 }
