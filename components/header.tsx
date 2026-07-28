@@ -22,7 +22,7 @@ export function Header({ dictionary, locale }: { dictionary: Dictionary; locale:
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-ink/55 backdrop-blur-xl">
       <div className="container flex h-20 items-center justify-between">
         <Link href={`/${locale}`} className="font-serif text-2xl tracking-wide text-bone">
-          RETOUCH<span className="text-gold">.</span>
+          Lily Oliinyk<span className="text-gold">.</span>
         </Link>
 
         <nav className="hidden items-center gap-8 text-xs uppercase tracking-[0.28em] text-muted md:flex">

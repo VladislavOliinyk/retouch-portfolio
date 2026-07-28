@@ -1,4 +1,4 @@
-# Retouch Portfolio
+# Lily Oliinyk Portfolio
 
 Premium portfolio website for a professional commercial retoucher.
 

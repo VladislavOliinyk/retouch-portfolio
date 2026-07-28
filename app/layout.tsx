@@ -18,13 +18,13 @@ const sans = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://retouch.studio"),
   title: {
-    default: "High-End Retouching Portfolio",
-    template: "%s | High-End Retouching Portfolio",
+    default: "Lily Oliinyk",
+    template: "%s | Lily Oliinyk",
   },
   description:
     "Premium commercial retouching portfolio for beauty, fashion, product, and campaign image finishing.",
   openGraph: {
-    title: "High-End Retouching Portfolio",
+    title: "Lily Oliinyk",
     description:
       "Premium commercial retouching for beauty, fashion, product, and brand campaigns.",
     images: ["/images/hero.jpg"],
