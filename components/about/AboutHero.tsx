@@ -16,7 +16,7 @@ export default function AboutHero() {
       </div>
 
       <PortfolioImage
-        src="/about/lily.jpg"
+        src="public/about/lily.jpg"
         alt="Lily Oliinyk"
         width={900}
         height={1200}
