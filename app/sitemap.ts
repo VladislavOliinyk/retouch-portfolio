@@ -1,5 +1,7 @@
 import { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 import { projects } from "@/data/projects";
 import { getProjectHref } from "@/lib/project";
 
