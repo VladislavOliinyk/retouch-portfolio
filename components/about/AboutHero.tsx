@@ -1,5 +1,6 @@
 import PortfolioImage from "@/components/ui/PortfolioImage";
 import Heading from "@/components/ui/Heading";
+import { asset } from "@/lib/assets";
 
 export default function AboutHero() {
   return (
@@ -14,14 +15,13 @@ export default function AboutHero() {
           texture, light and emotion.
         </Heading>
       </div>
-
-      <PortfolioImage
-        src="public/about/lily.jpg"
-        alt="Lily Oliinyk"
-        width={900}
-        height={1200}
-        className="w-full h-auto object-cover"
-      />
+<PortfolioImage
+  src={asset("/about/lily.jpg")}
+  alt="Lily Oliinyk"
+  width={900}
+  height={1200}
+  className="w-full h-auto object-cover"
+/>
     </section>
   );
 }
