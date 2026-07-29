@@ -1,7 +1,19 @@
 import type { NextConfig } from "next";
 
+const isGithubPages = process.env.GITHUB_ACTIONS === "true";
+
+const basePath =
+  process.env.NEXT_PUBLIC_BASE_PATH ??
+  (isGithubPages ? "/retouch-portfolio" : "");
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath,
+  assetPrefix: basePath,
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

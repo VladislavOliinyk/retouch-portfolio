@@ -6,9 +6,13 @@ import PortfolioImage from "@/components/ui/PortfolioImage";
 import ProjectNavigation from "@/components/gallery/ProjectNavigation";
 
 import { projects } from "@/data/projects";
-import {
-  getProjectImages,
-} from "@/lib/project";
+import { getProjectImages } from "@/lib/project";
+
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
+}
 
 type Props = {
   params: Promise<{
